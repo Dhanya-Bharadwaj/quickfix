@@ -627,10 +627,61 @@ html { scroll-behavior: smooth; }
     width: 100%;
   }
   
-  .contact-info .info-item { text-align: center; align-items: center; }
-  .info-item h3 { justify-content: center; }
-  .info-item p { word-break: break-word; } /* Prevent long address breaking layout */
+  /* Ultra Compact Contact for Mobile */
+  .contact-content { 
+    padding: 15px !important; 
+    gap: 20px !important; 
+    border-radius: 10px;
+  }
+  .contact-form { padding: 15px !important; box-shadow: none !important; border: 1px solid #eee; }
+  .contact-form input, 
+  .contact-form textarea { 
+    padding: 10px !important; 
+    margin-bottom: 10px !important; 
+    font-size: 0.9rem;
+  }
+  .contact-info { gap: 15px !important; padding: 0 !important; }
+  .contact-map iframe { min-height: 250px !important; } /* Smaller map for mobile */
+  .info-item { 
+    margin-bottom: 15px !important; 
+    padding: 10px !important; 
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  .info-item h3 { font-size: 1rem !important; margin-bottom: 5px; }
+  .info-item p { font-size: 0.85rem; }
   
-  .footer-content { text-align: center; }
-  .footer-grid { gap: 30px; }
+  /* Ultra Compact Footer for Mobile */
+  .footer { 
+    padding: 25px 0 15px; 
+  }
+  .footer-desc { display: none; } /* Hidden to save space */
+  .footer-grid { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-bottom: 20px;
+  }
+  .footer-logo { font-size: 1.5rem; margin-bottom: 5px; }
+  
+  .footer h4 { 
+    font-size: 1rem; 
+    margin-bottom: 10px; 
+    padding-bottom: 5px;
+  }
+  
+  /* Links in 2 columns to save vertical space */
+  .footer-links { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 10px;
+  }
+  .footer-links li { margin-bottom: 0; }
+  
+  .footer-contact li { 
+    margin-bottom: 8px; 
+    font-size: 0.8rem;
+  }
+  .footer-bottom { padding-top: 15px; margin-top: 10px; }
+  .footer p.copyright { font-size: 0.75rem; }
 }
