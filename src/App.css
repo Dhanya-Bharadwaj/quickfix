@@ -119,9 +119,25 @@ html { scroll-behavior: smooth; }
 .logo { 
   font-size: 1.8rem; 
   font-weight: 800; 
-  color: var(--primary-color); 
+  /* color: var(--primary-color); removed to let children control color */
   letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 0;
 }
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.tagline {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  line-height: 1;
+}
+.brand-red { color: #dc3545; }
+.brand-blue { color: var(--primary-color); }
 .highlight { color: var(--accent-color); }
 .nav-list { list-style: none; display: flex; align-items: center; }
 .nav-list li { margin-left: 30px; }

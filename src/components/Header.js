@@ -10,7 +10,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header-container">
-        <h1 className="logo">QuickFix<span className="highlight">.</span></h1>
+        <div className="logo-wrapper">
+          <h1 className="logo">
+            <span className="brand-red">Q</span><span className="brand-blue">uickfix</span>
+          </h1>
+          <p className="tagline">The Laptop-Desktop</p>
+        </div>
         
         <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle navigation">
           <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
