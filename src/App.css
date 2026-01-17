@@ -352,7 +352,16 @@ html { scroll-behavior: smooth; }
 .nav-btn { display: none; } /* Hidden by default on desktop */
 
 /* Gallery */
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.gallery-grid { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+}
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .gallery-card { 
   height: 250px; 
   background: linear-gradient(45deg, #eee, #f4f4f4); 
@@ -364,6 +373,12 @@ html { scroll-behavior: smooth; }
   font-size: 1.2rem; 
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+  overflow: hidden;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .gallery-card:hover { transform: scale(1.02); box-shadow: var(--shadow-md); }
 

@@ -1,4 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
+import quickfix1 from '../assets/quickfix1.webp';
+import quickfix2 from '../assets/quickfix2.webp';
+import quickfix3 from '../assets/quickfix3.webp';
+import quickfix4 from '../assets/quickfix4.webp';
 
 const Gallery = () => {
     const scrollRef = useRef(null);
@@ -31,7 +35,7 @@ const Gallery = () => {
       }
     };
 
-    const photos = ["Photo 1", "Photo 2", "Photo 3", "Photo 4"];
+    const photos = [quickfix1, quickfix2, quickfix3, quickfix4];
 
   return (
     <section className="section gallery-section">
@@ -49,8 +53,8 @@ const Gallery = () => {
             <div className="gallery-grid" ref={scrollRef} onScroll={checkScroll}>
                 {photos.map((photo, index) => (
                     <div key={index} className="gallery-slide">
-                        <div className="gallery-card placeholder">
-                            {photo}
+                        <div className="gallery-card">
+                            <img src={photo} alt={`Gallery ${index + 1}`} className="gallery-img" />
                         </div>
                     </div>
                 ))}
@@ -60,8 +64,6 @@ const Gallery = () => {
                 <button className="nav-btn next" onClick={() => scroll('right')}>&#10095;</button>
             )}
         </div>
-        
-        <p className="text-center mt-20" style={{color: '#888'}}>(Photos coming soon)</p>
       </div>
     </section>
   );

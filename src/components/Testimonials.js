@@ -44,7 +44,7 @@ const Testimonials = () => {
     },
     {
       name: "Arun M.",
-      text: "Very polite staff and quick resolution of my software problems. Highly recommended in Naagarabhaavi.",
+      text: "Very polite staff and quick resolution of my software problems. Highly recommended in Nagarbhavi.",
       rating: "⭐⭐⭐⭐⭐"
     }
   ];

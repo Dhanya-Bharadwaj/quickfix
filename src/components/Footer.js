@@ -29,7 +29,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <span>📍</span> 
-                No.3, 1st Floor, MN Complex, Naagarabhaavi, Bengaluru - 560072
+                No.3, 1st Floor, MN Complex, Nagarbhavi, Bengaluru - 560072
               </li>
               <li>
                 <span>📞</span> 

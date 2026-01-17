@@ -15,7 +15,7 @@ const Contact = () => {
               <p>
                 No.3, 1st Floor, MN Complex,<br/>
                 Jnanabharathi Main Road, 4 Block,<br/>
-                Teachers Colony, Naagarabhaavi,<br/>
+                Teachers Colony, Nagarbhavi,<br/>
                 Bengaluru, Karnataka 560072
               </p>
             </div>
